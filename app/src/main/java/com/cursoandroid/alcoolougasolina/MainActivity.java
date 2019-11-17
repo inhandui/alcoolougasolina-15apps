@@ -3,6 +3,7 @@ package com.cursoandroid.alcoolougasolina;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -28,6 +29,12 @@ public class MainActivity extends AppCompatActivity {
 
         resultado = findViewById(R.id.resultado);
 
+        verificar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
 
     }
 }
