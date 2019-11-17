@@ -20,5 +20,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        precoAlcool = findViewById(R.id.precoAlcool);
+        precoGasolina = findViewById(R.id.precoGasolina);
+
+        verificar = findViewById(R.id.btn_verificar);
+
+        resultado = findViewById(R.id.resultado);
+
+
     }
 }
