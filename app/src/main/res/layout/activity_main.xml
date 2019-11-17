@@ -67,4 +67,14 @@
         app:layout_constraintStart_toStartOf="@+id/gasolina"
         app:layout_constraintTop_toBottomOf="@+id/gasolina" />
 
+    <Button
+        android:id="@+id/btn_verificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:text="@string/btn_verificar"
+        app:layout_constraintEnd_toStartOf="@+id/editText3"
+        app:layout_constraintStart_toEndOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
