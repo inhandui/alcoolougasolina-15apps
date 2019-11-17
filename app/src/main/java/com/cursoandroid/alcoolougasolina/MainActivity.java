@@ -17,6 +17,13 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView resultado;
 
+    private String sPrecoAlcool;
+    private String sPrecoGasolina;
+
+    private int valorAlcool;
+    private int valorGasolina;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
