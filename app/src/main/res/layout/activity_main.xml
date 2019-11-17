@@ -22,7 +22,7 @@
         app:srcCompat="@drawable/logo" />
 
     <TextView
-        android:id="@+id/alcool"
+        android:id="@+id/txt_alcool"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
@@ -32,7 +32,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
-        android:id="@+id/gasolina"
+        android:id="@+id/txt_gasolina"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
@@ -42,7 +42,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/valorAlcool"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -50,12 +50,12 @@
         android:ems="10"
         android:inputType="numberDecimal"
         android:padding="@dimen/padding_text_box"
-        app:layout_constraintEnd_toEndOf="@+id/alcool"
-        app:layout_constraintStart_toStartOf="@+id/alcool"
-        app:layout_constraintTop_toBottomOf="@+id/alcool" />
+        app:layout_constraintEnd_toEndOf="@+id/txt_alcool"
+        app:layout_constraintStart_toStartOf="@+id/txt_alcool"
+        app:layout_constraintTop_toBottomOf="@+id/txt_alcool" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/valorGasolina"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -63,9 +63,9 @@
         android:ems="10"
         android:inputType="numberDecimal"
         android:padding="@dimen/padding_text_box"
-        app:layout_constraintEnd_toEndOf="@+id/gasolina"
-        app:layout_constraintStart_toStartOf="@+id/gasolina"
-        app:layout_constraintTop_toBottomOf="@+id/gasolina" />
+        app:layout_constraintEnd_toEndOf="@+id/txt_gasolina"
+        app:layout_constraintStart_toStartOf="@+id/txt_gasolina"
+        app:layout_constraintTop_toBottomOf="@+id/txt_gasolina" />
 
     <Button
         android:id="@+id/btn_verificar"
@@ -73,8 +73,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/btn_verificar"
-        app:layout_constraintEnd_toEndOf="@+id/editText3"
-        app:layout_constraintStart_toStartOf="@+id/editText"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintEnd_toEndOf="@+id/valorGasolina"
+        app:layout_constraintStart_toStartOf="@+id/valorAlcool"
+        app:layout_constraintTop_toBottomOf="@+id/valorAlcool" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
