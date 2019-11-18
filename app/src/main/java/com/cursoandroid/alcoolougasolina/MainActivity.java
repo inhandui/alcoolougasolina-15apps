@@ -44,6 +44,10 @@ public class MainActivity extends AppCompatActivity {
                 sPrecoAlcool = precoAlcool.getText().toString();
                 sPrecoGasolina = precoGasolina.getText().toString();
 
+                //Get int values from string prices.
+                valorAlcool = Integer.getInteger(sPrecoAlcool);
+                valorGasolina = Integer.getInteger(sPrecoGasolina);
+
             }
         });
 
