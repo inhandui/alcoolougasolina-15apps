@@ -40,6 +40,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                //Get text from EditText elements
+                sPrecoAlcool = precoAlcool.getText().toString();
+                sPrecoGasolina = precoGasolina.getText().toString();
+
             }
         });
 
