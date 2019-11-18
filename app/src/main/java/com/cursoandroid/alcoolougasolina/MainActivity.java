@@ -20,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
     private String sPrecoAlcool;
     private String sPrecoGasolina;
 
-    private int valorAlcool;
-    private int valorGasolina;
+    private Double valorAlcool;
+    private Double valorGasolina;
 
 
     @Override
@@ -45,8 +45,8 @@ public class MainActivity extends AppCompatActivity {
                 sPrecoGasolina = precoGasolina.getText().toString();
 
                 //Get int values from string prices.
-                valorAlcool = Integer.getInteger(sPrecoAlcool);
-                valorGasolina = Integer.getInteger(sPrecoGasolina);
+                valorAlcool = Double.parseDouble(sPrecoAlcool);
+                valorGasolina = Double.parseDouble(sPrecoGasolina);
 
             }
         });
