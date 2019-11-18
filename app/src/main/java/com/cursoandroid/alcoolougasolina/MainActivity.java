@@ -44,17 +44,21 @@ public class MainActivity extends AppCompatActivity {
                 sPrecoAlcool = precoAlcool.getText().toString();
                 sPrecoGasolina = precoGasolina.getText().toString();
 
-                //Get int values from string prices.
-                valorAlcool = Double.parseDouble(sPrecoAlcool);
-                valorGasolina = Double.parseDouble(sPrecoGasolina);
-
-                if ((valorAlcool / valorGasolina) >= 0.7) {
-                    resultado.setText(getText(R.string.gasolina));
+                if (sPrecoAlcool.isEmpty() || sPrecoGasolina.isEmpty()){
+                    resultado.setText(getText(R.string.erro));
                 }
-                else {
-                    resultado.setText(getText(R.string.alcool));
-                }
+                else{
+                    //Get int values from string prices.
+                    valorAlcool = Double.parseDouble(sPrecoAlcool);
+                    valorGasolina = Double.parseDouble(sPrecoGasolina);
 
+                    if ((valorAlcool / valorGasolina) >= 0.7) {
+                        resultado.setText(getText(R.string.gasolina));
+                    }
+                    else {
+                        resultado.setText(getText(R.string.alcool));
+                    }
+                }
             }
         });
 

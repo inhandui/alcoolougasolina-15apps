@@ -5,4 +5,5 @@
     <string name="btn_verificar">Verificar</string>
     <string name="alcool">Melhor utilizar álcool</string>
     <string name="gasolina">Melhor utilizar gasolina</string>
+    <string name="erro">Entre com os valores para o cálculo</string>
 </resources>
