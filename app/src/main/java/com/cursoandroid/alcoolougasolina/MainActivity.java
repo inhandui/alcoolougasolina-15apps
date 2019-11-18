@@ -48,6 +48,13 @@ public class MainActivity extends AppCompatActivity {
                 valorAlcool = Double.parseDouble(sPrecoAlcool);
                 valorGasolina = Double.parseDouble(sPrecoGasolina);
 
+                if ((valorAlcool / valorGasolina) >= 0.7) {
+                    //melhor utilizar gasolina
+                }
+                else {
+                    //melhor utilizar alcool
+                }
+
             }
         });
 
